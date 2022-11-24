@@ -131,6 +131,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #000000;
+  overflow: hidden;
 }
 header .container {
   display: flex;
@@ -166,6 +167,7 @@ header .plataform ul li {
   background-position: center center;
   background-repeat: no-repeat;
   height: 800px;
+  overflow: hidden;
 }
 .s-hero .container {
   display: flex;
@@ -256,6 +258,7 @@ header .plataform ul li {
   height: 18rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .s-info-geral ul {
   display: flex;
@@ -275,4 +278,83 @@ header .plataform ul li {
   line-height: 160%;
   color: #BDC2CB;
   margin-top: 12px;
+}
+
+.s-history {
+  width: 100%;
+  height: 899px;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  background-image: url(/assets/bg-story.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.s-history .container {
+  display: flex;
+  align-items: center;
+}
+.s-history .left {
+  width: 100%;
+}
+.s-history .left h2 {
+  margin-top: 28px;
+  margin-bottom: 24px;
+  max-width: 502px;
+}
+.s-history .left p {
+  margin-bottom: 52px;
+}
+.s-history .left .corp {
+  display: flex;
+  align-items: center;
+}
+.s-history .left .corp p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 160%;
+  max-width: 324px;
+  margin-left: 46px;
+}
+.s-history .kratos-atreus {
+  position: relative;
+  left: 110px;
+  top: -45px;
+}
+
+.s-characterts {
+  padding-top: 100px;
+  padding-bottom: 143px;
+  background-image: url(/assets/bg-characters.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.s-characterts .description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.s-characterts .description .left {
+  width: 100%;
+  max-width: 612px;
+}
+.s-characterts .description .left h2 {
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+.s-characterts .description .right {
+  display: flex;
+  align-items: center;
+}
+.s-characterts .description .right .text span {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  max-width: 143px;
+  margin-top: 22px;
 }/*# sourceMappingURL=main.css.map */

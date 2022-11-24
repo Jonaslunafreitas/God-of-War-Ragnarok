@@ -5,6 +5,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 800px;
+    overflow: hidden;
     .container {
         display: flex;
         align-items: flex-end;
@@ -95,6 +96,7 @@
     height: 18rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
     ul {
         display: flex;
         align-items: flex-start;
@@ -111,6 +113,87 @@
                 line-height: 160%;
                 color: #BDC2CB;
                 margin-top: 12px;
+            }
+        }
+    }
+}
+
+.s-history {
+    width: 100%;
+    height: 899px;
+    padding-top: 160px;
+    padding-bottom: 80px;
+    background-image: url(/assets/bg-story.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .left {
+        width: 100%;
+        h2 {
+            margin-top: 28px;
+            margin-bottom: 24px;
+            max-width: 502px;
+        }
+        p {
+            margin-bottom: 52px;
+        }
+        .corp {
+            display: flex;
+            align-items: center;
+            p {
+                margin-bottom: 0;
+                font-size: 16px;
+                line-height: 160%;
+                max-width: 324px;
+                margin-left: 46px;
+            }
+        }
+    }
+    .kratos-atreus {
+        position: relative;
+        left: 110px;
+        top: -45px;
+    }
+}
+
+.s-characterts {
+    padding-top: 100px;
+    padding-bottom: 143px;
+    background-image: url(/assets/bg-characters.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .description {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        .left {
+            width: 100%;
+            max-width: 612px;
+            h2 {
+                margin-top: 28px;
+                margin-bottom: 24px;
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            .text {
+                span {
+                    display: block;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                    max-width: 143px;
+                    margin-top: 22px;
+                }
             }
         }
     }
