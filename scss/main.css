@@ -53,6 +53,21 @@ body {
   color: #FFFFFF;
   margin: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .subtitle span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .subtitle {
+    justify-content: center;
+  }
+}
+@media (max-width: 560px) {
+  .subtitle span {
+    font-size: 1.6rem;
+  }
+}
 
 h1 {
   font-weight: 700;
@@ -60,6 +75,11 @@ h1 {
   line-height: 97.5%;
   color: #FFFFFF;
   font-stretch: 110;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 h2 {
@@ -86,11 +106,15 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 52rem;
+  height: 48rem;
   margin-bottom: 2.4rem;
   overflow: hidden;
 }
 .card-character .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 0.3s ease;
 }
 .card-character .image button {
@@ -123,6 +147,11 @@ p {
 }
 .card-character:hover img {
   transform: scale(1.1);
+}
+@media (max-width: 991px) {
+  .card-character .image {
+    height: 44rem;
+  }
 }
 
 header {
@@ -159,12 +188,27 @@ header .plataform ul li {
   font-size: 16px;
   line-height: 17px;
 }
+@media (max-width: 560px) {
+  header {
+    height: 70px;
+  }
+  header .plataform span {
+    display: none;
+  }
+  header .sony {
+    display: none;
+  }
+  header .logo {
+    max-width: 14oppx;
+  }
+}
 
 .s-hero {
   padding-top: 16.4rem;
   padding-bottom: 10.3rem;
   background-image: url(/assets/bg-hero.jpg);
-  background-position: center center;
+  background-position: center top;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 800px;
   overflow: hidden;
@@ -252,6 +296,85 @@ header .plataform ul li {
   max-width: 274px;
   margin-left: 15px;
 }
+@media (max-width: 1200px) {
+  .s-hero {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+  }
+  .s-hero .left {
+    max-width: 64rem;
+  }
+  .s-hero .left p {
+    font-size: 1.3rem;
+  }
+  .s-hero .right {
+    top: 0;
+    max-width: 35.3rem;
+  }
+  .s-hero .right button {
+    height: 19.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .s-hero {
+    padding: 6rem 0;
+    background-size: cover;
+  }
+  .s-hero .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-hero .button {
+    margin-bottom: 2rem;
+  }
+  .s-hero .left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .s-hero .left .value {
+    justify-content: center;
+  }
+  .s-hero .right {
+    text-align: center;
+  }
+  .s-hero .right .year {
+    flex-direction: column;
+  }
+  .s-hero .right .year p {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .s-hero {
+    padding: 4rem 0;
+  }
+  .s-hero .left h1 {
+    font-size: 6rem;
+    margin-top: 1.5px;
+    margin-bottom: 1.5rem;
+  }
+  .s-hero .left .p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .s-hero .left .value {
+    flex-direction: column;
+  }
+  .s-hero .right {
+    max-width: 31rem;
+  }
+  .s-hero .right button {
+    height: 17.7rem;
+  }
+  .s-hero .year p {
+    line-height: 24px;
+  }
+}
 
 .s-info-geral {
   width: 100%;
@@ -279,10 +402,30 @@ header .plataform ul li {
   color: #BDC2CB;
   margin-top: 12px;
 }
+@media (max-width: 1200px) {
+  .s-info-geral {
+    padding: 4rem 0;
+    height: auto;
+  }
+  .s-info-geral ul {
+    flex-wrap: wrap;
+    gap: 3rem 0;
+  }
+  .s-info-geral ul li {
+    width: 33.3%;
+  }
+}
+@media (max-width: 560px) {
+  .s-info-geral ul li {
+    width: 50%;
+  }
+  .s-info-geral ul li span {
+    max-width: 145px;
+  }
+}
 
 .s-history {
   width: 100%;
-  height: 899px;
   padding-top: 160px;
   padding-bottom: 80px;
   background-image: url(/assets/bg-story.png);
@@ -321,6 +464,58 @@ header .plataform ul li {
   left: 110px;
   top: -45px;
 }
+@media (max-width: 1200px) {
+  .s-history {
+    background-image: none;
+    padding: 6rem 0;
+  }
+  .s-history .container {
+    flex-direction: column-reverse;
+  }
+  .s-history .kratos-atreus {
+    left: 0;
+    top: 0;
+    margin-bottom: 6rem;
+  }
+  .s-history .left {
+    max-width: 100%;
+    text-align: center;
+  }
+  .s-history .left .subtitle {
+    justify-content: center;
+  }
+  .s-history .left h2 {
+    max-width: 75%;
+    margin: 2rem auto;
+  }
+  .s-history .left .corp {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .s-history .left h2 {
+    max-width: 92%;
+  }
+}
+@media (max-width: 560px) {
+  .s-history .left h2 {
+    font-size: 3rem;
+  }
+  .s-history .left p {
+    font-size: 16px;
+    margin-bottom: 4rem;
+  }
+  .s-history .left .corp {
+    flex-direction: column;
+  }
+  .s-history .left .corp P {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .s-history .kratos-atreus {
+    margin-bottom: 4rem;
+  }
+}
 
 .s-characterts {
   padding-top: 100px;
@@ -357,4 +552,169 @@ header .plataform ul li {
   color: #FFFFFF;
   max-width: 143px;
   margin-top: 22px;
+}
+@media (max-width: 1200px) {
+  .s-characterts {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .s-characterts .description {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-characterts .description .left {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-characterts {
+    padding: 4rem 0;
+  }
+  .s-characterts .description left h2 {
+    font-size: 3rem;
+  }
+  .s-characterts .description left p {
+    font-size: 1.6rem;
+  }
+  .s-characterts .description .right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-characterts .description .right .text img {
+    margin: 0 auto;
+  }
+  .s-characterts .description .right .text span {
+    max-width: 100%;
+  }
+  .s-characterts .slide-characterts {
+    margin-top: 4rem;
+  }
+}
+
+.s-kratos {
+  background-image: url(/assets/bg-hero.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 800px;
+  overflow: hidden;
+}
+.s-kratos .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.s-kratos .left {
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 78.2rem;
+}
+.s-kratos .left h1 {
+  margin-bottom: 18px;
+}
+.s-kratos .left p {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 140%;
+  color: white;
+  margin-bottom: 4rem;
+}
+.s-kratos .right {
+  width: 100%;
+  max-width: 44.4rem;
+  position: relative;
+  top: 97px;
+}
+.s-kratos .right span {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+.s-kratos .right .avatar {
+  max-width: 320px;
+}
+@media (max-width: 1200px) {
+  .s-kratos {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+  }
+  .s-kratos .left {
+    max-width: 64rem;
+  }
+  .s-kratos .left p {
+    font-size: 1.3rem;
+  }
+  .s-kratos .right {
+    top: 0;
+    max-width: 35.3rem;
+  }
+  .s-kratos .right button {
+    height: 19.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .s-kratos {
+    padding: 6rem 0;
+    background-size: cover;
+  }
+  .s-kratos .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-kratos .button {
+    margin-bottom: 2rem;
+  }
+  .s-kratos .left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .s-kratos .left .value {
+    justify-content: center;
+  }
+  .s-kratos .right {
+    text-align: center;
+  }
+  .s-kratos .right .year {
+    flex-direction: column;
+  }
+  .s-kratos .right .year p {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .s-kratos {
+    padding: 4rem 0;
+  }
+  .s-kratos .left h1 {
+    font-size: 6rem;
+    margin-top: 1.5px;
+    margin-bottom: 1.5rem;
+  }
+  .s-kratos .left .p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .s-kratos .left .value {
+    flex-direction: column;
+  }
+  .s-kratos .right {
+    max-width: 31rem;
+  }
+  .s-kratos .right button {
+    height: 17.7rem;
+  }
+  .s-kratos .year p {
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
